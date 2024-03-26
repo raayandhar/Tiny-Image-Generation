@@ -15,7 +15,7 @@ Performance: 6/6
 Write-up: 4/4
 
 To run, 
-1. `git clone [Tiny-Image-Generation](https://github.com/raayandhar/Tiny-Image-Generation/edit/main/README.md).git`
+1. `git clone https://github.com/raayandhar/Tiny-Image-Generation.git`
 2. Run the following:
 ```bash
 conda create Diffusion_IIG python=3.11.5 ipython
