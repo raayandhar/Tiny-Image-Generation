@@ -12,7 +12,7 @@ We measure the quality of generated images using FID scores and validate model p
 Creativity: 7/7 \
 Insight: 7/7 \
 Performance: 6/6 \
-Write-up: 4/4 \
+Write-up: 4/4
 
 To run, 
 1. `git clone https://github.com/raayandhar/Tiny-Image-Generation.git`
