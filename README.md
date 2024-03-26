@@ -1,18 +1,21 @@
-# Diffusion-IIG: Diffusion Implicit Image Generation
+# Tiny-Image-Generation
 
-![Diffusion-IIG logo](OIG4.jpg)
+ECE C147 (Neural Networks & Deep Learning) final project. Implemented DDIM, DDPM, and PixelCNN generative models. See report for details.
 
-A reimplemention of the DDIM sampling / generation algorithm, as a precursor to implicit image generation via invertible DDIMs.
-We compare three different modes of the latest generative models, provide a library of options for noise schedulers / samplers, and analyze the best hyperparameters and model architecture decisions for generative models of various scales.
+## Abstract
+This paper presents a study of small image size generative modeling using diffusion models and PixelCNN. Our experiments are focused on two `tiny image' datasets, optimized for our computational constraints. By analyzing the interpolation in our diffusion models, investigating various beta and noise schedules, and evaluating the denoising capabilities at different sampling steps, we provide novel insights into the mechanisms and effectiveness of each model type.
 
-## Background:
-Diffusion models have emerged as a powerful class of generative models, capable of producing high-quality, diverse samples across a range of domains, including images, audio, and text. The Diffusion-IIG project specifically focuses on image generation, leveraging the invertibility and consistency of DDIM models to generate any kind of implicit image - depthmaps, segmentation maps, or albedo maps - given an arbitrary input image.
+We measure the quality of generated images using FID scores and validate model performance through qualitative and quantitative assessments. The outcomes of this study illuminate the strengths and limitations of each approach, with particular attention to the adaptation of diffusion models for small image sizes. The results have promising implications for the application of these models in domains where computational efficiency is paramount.
 
-Our main goal right now is to provide a comprehensive codebase that allows easy experimentation, modification, and extension of diffusion + pixelCNN models. Stay tuned for our implicit image generation work!
+### Score:
+(across both graders)
+Creativity: 7/7
+Insight: 7/7
+Performance: 6/6
+Write-up: 4/4
 
-## Installation:
-To get started with Diffusion-IIG, you'll need to have Python 3.6+ and PyTorch 1.0+ installed. You can then clone this repository and follow the instructions below to setup the necessary packages.
-1. `git clone Diffusion-IIG`
+To run, 
+1. `git clone [Tiny-Image-Generation](https://github.com/raayandhar/Tiny-Image-Generation/edit/main/README.md).git`
 2. Run the following:
 ```bash
 conda create Diffusion_IIG python=3.11.5 ipython
@@ -20,12 +23,3 @@ conda activate Diffusion_IIG
 pip install -r requirements.txt
 ```
 
-
-## Todo:
-- [ ] Implement PixelCNN benchmark. TODO: Done, integrate notebook with main repo.
-- [x] Implement DDPM benchmark.
-    - [x] Noise scheduler library.
-    - [ ] Sampler library.
-- [ ] Implement DDIM benchmark.
-    - [x] UNet architecture.
-    - [x] Training loop.
