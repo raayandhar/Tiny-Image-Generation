@@ -8,11 +8,11 @@ This paper presents a study of small image size generative modeling using diffus
 We measure the quality of generated images using FID scores and validate model performance through qualitative and quantitative assessments. The outcomes of this study illuminate the strengths and limitations of each approach, with particular attention to the adaptation of diffusion models for small image sizes. The results have promising implications for the application of these models in domains where computational efficiency is paramount.
 
 ### Score:
-(across both graders)
-Creativity: 7/7
-Insight: 7/7
-Performance: 6/6
-Write-up: 4/4
+(across both graders) \
+Creativity: 7/7 \
+Insight: 7/7 \
+Performance: 6/6 \
+Write-up: 4/4 \
 
 To run, 
 1. `git clone https://github.com/raayandhar/Tiny-Image-Generation.git`
